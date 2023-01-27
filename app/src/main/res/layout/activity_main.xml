@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/tournamentsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:background="@drawable/gradient_resource_main_activity">
+
+        <TextView
+            android:id="@+id/tour"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Турниры"
+            android:textAlignment="center"
+            android:textColor="@color/teal_200"
+            android:textSize="35sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tour"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"/>
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#2C3942"
+        android:id="@+id/footer">
+
+        <Button
+            android:id="@+id/myTournaments"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:background="#00FFFFFF"
+            android:foreground="@android:drawable/btn_dialog"
+            app:icon="@android:drawable/arrow_up_float"
+            android:layout_row="0" android:layout_column="0"/>
+
+        <Button
+            android:id="@+id/allTournaments"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:background="#00FFFFFF"
+            android:foreground="@android:drawable/btn_dialog"
+            app:icon="@android:drawable/arrow_up_float"
+            android:layout_row="0" android:layout_column="1"/>
+
+        <Button
+            android:id="@+id/myTeam"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:background="#00FFFFFF"
+            android:foreground="@android:drawable/btn_dialog"
+            app:icon="@android:drawable/arrow_up_float"
+            android:layout_row="0" android:layout_column="2"/>
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:background="#00FFFFFF"
+            android:foreground="@android:drawable/btn_dialog"
+            app:icon="@android:drawable/arrow_up_float"
+            android:layout_row="0" android:layout_column="3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main"
+            android:text="Мои турниры"
+            android:layout_marginStart="15dp"
+            android:paddingBottom="10dp"
+            android:layout_row="1" android:layout_column="0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tournaments"
+            android:text="Все турниры"
+            android:layout_marginStart="25dp"
+            android:paddingBottom="10dp"
+            android:layout_row="1" android:layout_column="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/team"
+            android:text="Моя команда"
+            android:layout_marginStart="20dp"
+            android:textAlignment="center"
+            android:paddingBottom="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_row="1" android:layout_column="2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/more"
+            android:text="Профиль"
+            android:paddingBottom="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_row="1" android:layout_column="3"/>
+    </GridLayout>
+</RelativeLayout>

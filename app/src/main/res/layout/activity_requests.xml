@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Requests"
+    android:background="@drawable/gradient_card">
+    <TextView
+        android:id="@+id/requestsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Заявки на турнир"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRequest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/requestsText"
+        android:background="@drawable/gradient_card"/>
+</RelativeLayout>

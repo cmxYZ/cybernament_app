@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseRoleActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/authorization_background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Cybernament"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/companyName"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_below="@+id/companyName"
+            android:layout_marginTop="90dp"
+            app:cardBackgroundColor="#55000000"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/chooseRoleCard">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Что вы хотите делать?"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:id="@+id/chooseQuestion"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="190sp"
+                    android:layout_height="140sp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="20dp"
+                    app:cardBackgroundColor="#6D6A6A"
+                    app:cardCornerRadius="25dp"
+                    android:id="@+id/organizerForm">
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:text="Организатор"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/companyName"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="35dp"
+                        android:text="1.организовывать турниры"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/companyName"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="60dp"
+                        android:text="2.организовывать лиги"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:id="@+id/selectOrganizerButton"
+                        android:layout_width="120dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="85dp"
+                        android:background="@drawable/choose_organizer_button"
+                        android:text="Выбрать"
+                        android:textSize="14dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180sp"
+                    android:layout_height="140sp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="10dp"
+                    app:cardBackgroundColor="#6D6A6A"
+                    app:cardCornerRadius="25dp">
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Игрок"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="35dp"
+                        android:text="1.участвовать в турнирах"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="60dp"
+                        android:text="2.участвовать в лигах"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:id="@+id/selectPlayer"
+                        android:layout_width="120dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="85dp"
+                        android:background="@drawable/choose_organizer_button"
+                        android:text="Выбрать"
+                        android:textSize="14dp" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

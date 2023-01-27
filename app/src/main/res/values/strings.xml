@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="username">username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="cybernament">Cybernament</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login_here">You already have account? <u>Log in</u></string>
+    <string name="sign_up_here">Create a new account? <u>Sign up</u></string>
+    <string name="createTournament">Создать турнир</string>
+    <string name="gameChoose">Выберите игру</string>
+    <string name="choose_pubg">choosePubg</string>
+    <string name="pubg">Pubg</string>
+    <string name="valorant">Valorant</string>
+    <string name="brawl_stars">brawl stars</string>
+    <string name="free_fire">Free Fire</string>
+    <string name="standoff2">Standoff2</string>
+    <string name="clash_of_clans">Clash Of Clans</string>
+    <string name="apex_legends">Apex Legends</string>
+    <string name="clash_royal">Clash Royal</string>
+    <string name="mobile_legends">Mobile Legends</string>
+    <string name="onceEliminate">Единое исключение</string>
+    <string name="SwissSystem">Швейцарская Система</string>
+    <string name="newTournament">Новый турнир</string>
+    <string name="customizeTournament">Кастомизировать турнир</string>
+    <string name="game">Игра</string>
+    <string name="tournamentGame">Название турнира</string>
+    <string name="tournamentGameMode">Режим турнира</string>
+    <string name="tournamentTeamsCount">Количество команд в турнире</string>
+    <string name="tournamentWinnersCount">Количество победителей</string>
+    <string name="tournamentFormat">Формат турнира</string>
+    <string name="tournamentDescription">Подробности</string>
+    <string name="tournamentRules">Правила</string>
+    <string name="tournamentCreated">Турнир создан!</string>
+    <string name="tournamentCreationSuccessful">Вы успешно создали турнир.</string>
+    <string name="wannaPublish">Хотите его опубликовать?</string>
+    <string name="later">Позже</string>
+    <string name="publish">Опубликовать</string>
+    <string name="tournamentPublished">Турнир опубликован!</string>
+    <string name="tournamentPublishedSuccessful">Вы успешно опубликовали турнир.</string>
+    <string name="onMain">На главную</string>
+
+    <string-array name="regions">
+        <item>North America</item>
+        <item>South America</item>
+        <item>Asia</item>
+        <item>Europe</item>
+    </string-array>
+
+    <string-array name="valorantGameModes">
+        <item>Competitive 1:1</item>
+        <item>Competitive 2:2</item>
+        <item>Competitive 3:3</item>
+        <item>Competitive 4:4</item>
+        <item>Competitive 5:5</item>
+    </string-array>
+</resources>

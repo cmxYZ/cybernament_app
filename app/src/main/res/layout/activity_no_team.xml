@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoTeam"
+    android:background="@drawable/gradient_no_team">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="190dp"
+        android:text="У вас ещё нет команды для создания и участия в турнирах."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/createTeam"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="Создать команду"/>
+
+    <Button
+        android:id="@+id/findTeam"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createTeam"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="Найти команду" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:id="@+id/footer">
+
+        <Button
+            android:id="@+id/main"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:background="#00FFFFFF"
+            android:foreground="@android:drawable/btn_dialog"
+            app:icon="@android:drawable/arrow_up_float"
+            android:layout_row="0" android:layout_column="0"/>
+
+        <Button
+            android:id="@+id/tournaments"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:background="#00FFFFFF"
+            android:foreground="@android:drawable/btn_dialog"
+            app:icon="@android:drawable/arrow_up_float"
+            android:layout_row="0" android:layout_column="1"/>
+
+        <Button
+            android:id="@+id/team"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:background="#00FFFFFF"
+            android:foreground="@android:drawable/btn_dialog"
+            app:icon="@android:drawable/arrow_up_float"
+            android:layout_row="0" android:layout_column="2"/>
+
+        <Button
+            android:id="@+id/more"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:background="#00FFFFFF"
+            android:foreground="@android:drawable/btn_dialog"
+            app:icon="@android:drawable/arrow_up_float"
+            android:layout_row="0" android:layout_column="3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main"
+            android:text="Мои турниры"
+            android:layout_marginStart="15dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:layout_row="1" android:layout_column="0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tournaments"
+            android:text="Все турниры"
+            android:textColor="@color/black"
+            android:layout_marginStart="25dp"
+            android:paddingBottom="10dp"
+            android:layout_row="1" android:layout_column="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/team"
+            android:text="Моя команда"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            android:textAlignment="center"
+            android:paddingBottom="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_row="1" android:layout_column="2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/more"
+            android:text="Профиль"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_row="1" android:layout_column="3"/>
+    </GridLayout>
+</RelativeLayout>

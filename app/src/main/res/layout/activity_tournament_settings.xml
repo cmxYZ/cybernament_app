@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TournamentSettings"
+    android:background="@drawable/gradient_tournament_settings">
+
+    <TextView
+        android:id="@+id/tournamentSettingsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Настройка турнира"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="имя"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tournamentSettingsText"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="info"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/name"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="game"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/info"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/gameMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="gameMode"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/game"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/format"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="format"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/gameMode"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/startDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="startDate"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/format"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/teamsCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="teamsCount"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/startDate"
+        android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/requestButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Запросы на регистрацию"
+        android:backgroundTint="@color/teal_200"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/teamsCount"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:id="@+id/footer">
+
+        <Button
+            android:id="@+id/myTournaments"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:background="#00FFFFFF"
+            android:foreground="@android:drawable/btn_dialog"
+            app:icon="@android:drawable/arrow_up_float"
+            android:layout_row="0" android:layout_column="0"/>
+
+        <Button
+            android:id="@+id/allTournaments"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:background="#00FFFFFF"
+            android:foreground="@android:drawable/btn_dialog"
+            app:icon="@android:drawable/arrow_up_float"
+            android:layout_row="0" android:layout_column="1"/>
+
+        <Button
+            android:id="@+id/myTeam"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:background="#00FFFFFF"
+            android:foreground="@android:drawable/btn_dialog"
+            app:icon="@android:drawable/arrow_up_float"
+            android:layout_row="0" android:layout_column="2"/>
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:background="#00FFFFFF"
+            android:foreground="@android:drawable/btn_dialog"
+            app:icon="@android:drawable/arrow_up_float"
+            android:layout_row="0" android:layout_column="3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main"
+            android:text="Мои турниры"
+            android:layout_marginStart="15dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/purple_700"
+            android:layout_row="1" android:layout_column="0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tournaments"
+            android:text="Все турниры"
+            android:layout_marginStart="25dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:layout_row="1" android:layout_column="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/team"
+            android:text="Моя команда"
+            android:layout_marginStart="20dp"
+            android:textAlignment="center"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:layout_alignParentEnd="true"
+            android:layout_row="1" android:layout_column="2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/more"
+            android:text="Профиль"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_row="1" android:layout_column="3"/>
+    </GridLayout>
+</RelativeLayout>
